@@ -1,4 +1,4 @@
-<?= $this->extend('layout/menu') ?>
+<?= $this->extend('layout/V_menu') ?>
 
 <!--judul-->
 <?= $this->section('judul') ?>
