@@ -31,6 +31,9 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/beranda', 'C_beranda::index');
 $routes->get('/kategori', 'C_kategori::index');
+$routes->get('/satuan', 'C_satuan::index');
+$routes->get('/produk', 'C_produk::index');
+$routes->get('/tambahproduk', 'C_produk::tambahdata');
 
 /*
  * --------------------------------------------------------------------

@@ -16,6 +16,6 @@ class C_kategori extends BaseController
         $data = [
             'datakategori' => $this->kategori->findAll()
         ];
-        return view('kategori/V_data', $data);
+        return view('kategori/V_datakategori', $data);
     }
 }
