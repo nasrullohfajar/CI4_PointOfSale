@@ -5,7 +5,6 @@ use App\Models\M_produk;
 
 class C_produk extends BaseController
 {
-
     public function __construct(){
 
         $this->produk = new M_produk();

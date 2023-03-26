@@ -47,6 +47,7 @@ $routes->post('/buatfaktur', 'C_penjualan::buatFaktur');
 
 //pembelian
 $routes->get('/pembelian', 'C_pembelian::index');
+$routes->post('/postpembelian', 'C_pembelian::simpanDataPembelian');
 
 
 /*
