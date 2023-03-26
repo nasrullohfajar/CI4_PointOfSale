@@ -22,25 +22,9 @@ class Penjualan extends Migration
 				'type' => 'int',
 				'constraint' => '11',
 			],
-			'jual_dispersen' => [
-				'type' => 'double',
-				'constraint' => '11,2',
-				'default' => 0.00
-			],
-			'jual_disuang' => [
-				'type' => 'double',
-				'constraint' => '11,2',
-				'default' => 0.00
-			],
-			'jual_totalkotor' => [
-				'type' => 'double',
-				'constraint' => '11,2',
-				'default' => 0.00
-			],
-			'jual_totalbersih' => [
-				'type' => 'double',
-				'constraint' => '11,2',
-				'default' => 0.00
+			'jual_totalharga' => [
+				'type' => 'int',
+				'constraint' => '11',
 			]
 		]);
 

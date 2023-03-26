@@ -16,14 +16,8 @@ class Supplier extends Migration
 			],
 			'supplier_nama' => [
 				'type' => 'varchar',
-				'constraint' => '100',
+				'constraint' => '50',
 				'null' => false
-			],
-			'supplier_alamat' => [
-				'type' => 'text'
-			],
-			'supplier_telp' => [
-				'type' => 'char', 'constraint' => '20'
 			]
 		]);
 

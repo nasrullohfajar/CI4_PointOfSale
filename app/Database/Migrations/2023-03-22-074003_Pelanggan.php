@@ -18,12 +18,6 @@ class Pelanggan extends Migration
 				'type' => 'varchar',
 				'constraint' => '100',
 				'null' => false
-			],
-			'pelanggan_alamat' => [
-				'type' => 'text'
-			],
-			'pelanggan_telp' => [
-				'type' => 'char', 'constraint' => '20'
 			]
 		]);
 

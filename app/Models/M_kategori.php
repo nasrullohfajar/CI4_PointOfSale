@@ -10,4 +10,9 @@ class M_kategori extends Model
 
 
     protected $allowedFields = ['kategori_id', 'kategori_nama'];
+
+    public function cariData($cari)
+    {
+        return $this->table('kategori')->like('kategori_nama', $cari);
+    }
 }

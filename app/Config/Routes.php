@@ -30,10 +30,24 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/beranda', 'C_beranda::index');
+
+//kategori
 $routes->get('/kategori', 'C_kategori::index');
+$routes->post('/carikategori', 'C_kategori::index');
+$routes->post('/hapuskategori', 'C_kategori::hapus');
+$routes->post('/editkategori', 'C_kategori::formEdit');
+
 $routes->get('/satuan', 'C_satuan::index');
 $routes->get('/produk', 'C_produk::index');
 $routes->get('/tambahproduk', 'C_produk::tambahdata');
+
+//penjualan
+$routes->get('/penjualan', 'C_penjualan::index');
+$routes->post('/buatfaktur', 'C_penjualan::buatFaktur');
+
+//pembelian
+$routes->get('/pembelian', 'C_pembelian::index');
+
 
 /*
  * --------------------------------------------------------------------

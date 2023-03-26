@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>POS Made In Inazuma</title>
 
+    <!--google font-->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <!--font awesome-->
     <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+
+    <!--template-->
     <link rel="stylesheet" href="assets/dist/css/adminlte.min.css?v=3.2.0">
     <link rel="stylesheet" href="assets/plugins/sweetalert2/sweetalert2.min.css">
     <script src="assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
+    <!--JQuery-->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
 
     <script nonce="516b6bae-2e92-40e5-9be6-a7dbde8b2aff">
     (function(w, d) {
@@ -111,7 +119,7 @@
                         <img src="assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">Admin</a>
                     </div>
                 </div>
 
@@ -161,8 +169,6 @@
 
     </div>
 
-
-    <script src="assets/plugins/jquery/jquery.min.js"></script>
 
     <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
