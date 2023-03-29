@@ -9,12 +9,6 @@
 </li>
 
 <li class="nav-header">Kelola</li>
-<li class="nav-item">
-    <a href="/kategori" class="nav-link">
-        <i class="nav-icon fa fa-list"></i>
-        <p>Kategori</p>
-    </a>
-</li>
 
 <li class="nav-item">
     <a href="/produk" class="nav-link">

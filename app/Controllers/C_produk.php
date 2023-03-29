@@ -12,9 +12,11 @@ class C_produk extends BaseController
 
     public function index()
     {
-        $data = [
-            'dataproduk' => $this->produk->findAll()
-        ];
+        $pager = \Config\Services::pager();
+        $data['dataproduk'] = $this->produk->paginate(5, 'produk');
+        $data['pager'] = $this->produk->pager;
+        $data['nomor'] = nomor($this->request->getVar('page_produk'), 5);
+        
         return view('produk/V_dataproduk', $data);
     }
 

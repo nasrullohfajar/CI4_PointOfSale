@@ -12,10 +12,12 @@ class C_pembelian extends BaseController
 
     public function index() {
       
-      $data = [
-        'datapembelian' => $this->pembelian->findAll()
-      ];
-        return view('transaksi/V_indexpembelian',$data);
+      $pager = \Config\Services::pager();
+      $data['datapembelian'] = $this->pembelian->paginate(10, 'pembelian');
+      $data['pager'] = $this->pembelian->pager;
+      $data['nomor'] = nomor($this->request->getVar('page_pembelian'), 10);
+
+      return view('transaksi/V_indexpembelian',$data);
     }
 
     public function simpanDataPembelian(){

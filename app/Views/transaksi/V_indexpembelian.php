@@ -78,20 +78,22 @@
                 <th>No</th>
                 <th>Faktur</th>
                 <th>Tanggal Beli</th>
-                <th>Kode Supplier</th>
+                <th>Kode Barcode</th>
+                <th>Jumlah Beli</th>
                 <th>Total Harga</th>
             </tr>
         </thead>
 
         <tbody>
-            <?php $nomor = 1;
+            <?php
                     foreach($datapembelian as $row):
                 ?>
             <tr>
                 <td><?= $nomor++; ?></td>
                 <td><?= $row['beli_faktur']; ?></td>
                 <td><?= $row['beli_tgl']; ?></td>
-                <td><?= $row['beli_supplierkode']; ?></td>
+                <td><?= $row['beli_kodebarcode']; ?></td>
+                <td><?= $row['beli_jumlah']; ?></td>
                 <td><?= $row['beli_totalharga']; ?></td>
             </tr>
             <?php endforeach;?>
@@ -99,5 +101,5 @@
     </table>
 </div>
 </div>
-
+<?= $pager->links('pembelian', 'bootstrap_pagination');?>
 <?= $this->endSection() ?>

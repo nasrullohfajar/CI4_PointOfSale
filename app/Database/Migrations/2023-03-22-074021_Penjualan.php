@@ -22,6 +22,14 @@ class Penjualan extends Migration
 				'type' => 'int',
 				'constraint' => '11',
 			],
+			'jual_kodebarcode' => [
+				'type' => 'char',
+				'constraint' => '50',
+			],
+			'jual_jumlah' => [
+				'type' => 'int',
+				'constraint' => '11',
+			],
 			'jual_totalharga' => [
 				'type' => 'int',
 				'constraint' => '11',
@@ -30,6 +38,7 @@ class Penjualan extends Migration
 
 		$this->forge->addPrimaryKey('jual_faktur');
 		$this->forge->addForeignKey('jual_pelanggankode', 'pelanggan', 'pelanggan_kode', 'cascade');
+		$this->forge->addForeignKey('jual_kodebarcode', 'produk', 'kodebarcode', 'cascade');
 		$this->forge->createTable('penjualan');
     }
 

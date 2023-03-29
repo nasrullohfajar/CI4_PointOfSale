@@ -29,13 +29,12 @@
                     <th>Kode Barcode</th>
                     <th>Nama Produk</th>
                     <th>Stok</th>
-                    <th>Harga Beli</th>
-                    <th>Harga Jual</th>
+                    <th>Harga</th>
                 </tr>
             </thead>
 
             <tbody>
-                <?php $nomor = 1;
+                <?php
                     foreach($dataproduk as $row):
                 ?>
                 <tr>
@@ -43,15 +42,13 @@
                     <td><?= $row['kodebarcode']; ?></td>
                     <td><?= $row['namaproduk']; ?></td>
                     <td><?= $row['stok_tersedia']; ?></td>
-                    <td><?= $row['harga_beli']; ?></td>
-                    <td><?= $row['harga_jual']; ?></td>
+                    <td><?= $row['harga']; ?></td>
                 </tr>
                 <?php endforeach;?>
             </tbody>
         </table>
+        <?= $pager->links('produk', 'bootstrap_pagination');?>
     </div>
-
 </div>
 </div>
-
 <?= $this->endSection() ?>

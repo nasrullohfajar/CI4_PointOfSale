@@ -18,7 +18,11 @@ class Pembelian extends Migration
 				'type'		=> 'date',
 				'null'		=> false
 			],
-			'beli_supplierkode' => [
+			'beli_kodebarcode' => [
+				'type' => 'char',
+				'constraint' => '50',
+			],
+			'beli_jumlah' => [
 				'type' => 'int',
 				'constraint' => '11',
 			],
@@ -29,7 +33,7 @@ class Pembelian extends Migration
 		]);
 
 		$this->forge->addPrimaryKey('beli_faktur');
-		$this->forge->addForeignKey('beli_supplierkode', 'supplier', 'supplier_kode', 'cascade');
+		$this->forge->addForeignKey('beli_kodebarcode', 'produk', 'kodebarcode', 'cascade');
 		$this->forge->createTable('pembelian');
     }
 
